@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv("data/opioid_tweets.csv")
 
 with open("bad_tweets.txt", "r") as f:
-    ids = [i.strip() for i in f.read().split(",")]
+    ids = [i.strip() for i in f.read().split("\n")]
 
 for item in df[df["id"].isin(ids)].iterrows():
     print()
