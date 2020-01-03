@@ -1,0 +1,26 @@
+Non-Generative Methods:
+Voting
+    Using a majority vote method of base learners to get the final output
+Stacking
+    Meta-learner learns how to best use the predictions from the base learner
+    
+Generative Methods:
+Boosting
+    To reduce bias
+    Weight training observations and then adjusting those weights depending on performance on respective data points
+Bagging
+    To reduce variance
+    Resampling of the initial training dataset
+RF
+    Similar to bagging, but instead of resampling instances of the training set, it resamples features
+
+Issues in Ensemble Learning:
+1. Weak and noisy data cannot be improved upon with more base learners
+2. Interpretability decreases with more base learners
+    When the prediction must also include a probability, some ensemble methods tend to deliver poor probability estimates
+3. Models must have different characteristics, no point in training multiple of the same model
+
+Two ways of checking learning:
+Validation Curves - different hyperparameter performance
+Learning Curves - different sample sizes
+
