@@ -8,7 +8,7 @@ import requests as rq
 import re
 import pandas as pd 
 
-df = pd.read_csv("data/opioid_tweets_new.csv")
+df = pd.read_csv("../Cleaning/opioid_tweets_new.csv")
 
 pattern = re.compile(r"https?://t.co[\.A-Za-z0-9/]*\s*");
 to_twitter = re.compile(r"https?://twitter.com[\.A-Za-z0-9/]*\s*")
@@ -47,14 +47,14 @@ def twitter(url):
     if type(url) != bool:
         if url == "Suspended":
            return True
-       elif url == "N/A":
+        elif url == "N/A":
            return "N/A"
-       elif url == "Redo":
+        elif url == "Redo":
            return "Redo"
-       r = to_twitter.findall(url)
-       if r != 0:        
+        r = to_twitter.findall(url)
+        if r != 0:        
            return( True)
-       else:
+        else:
            return False
     else:
          return False
@@ -109,7 +109,7 @@ df['twitter_url'] = twitter_url
 
 
 
-df.to_csv("data/opioid_tweets_clean.csv")   
+df.to_csv("../Cleaning/opioid_tweets_clean.csv")   
 print("Done") 
 
 
