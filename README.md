@@ -42,6 +42,7 @@ Having processed our text data into numerical matrices, we employed exploratory 
 
 "`Buy GHB, Adderall, Alprazolam, Ritalin, Ketamine HCL, MDMA, Fentanyl online without prescription Contact us: Phon… https://t.co/6WhgXP71bp`"
 
+Below depicts word usage across the two types of tweets with the original set of 9 opioids omitted, along with traditional English stopwords. The filtered output includes only words falling into the categories "Verb", "Adjective", "Adverb" or "Noun".
 ![Good Word Cloud](/Visualizations/good_tweets_wordcloud.png)
 ![Bad Word Cloud](/Visualizations/bad_tweets_wordcloud.png)
 
