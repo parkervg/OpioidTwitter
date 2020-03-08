@@ -4,6 +4,15 @@ https://docs.google.com/document/d/1AHY9714oP3lTTIEBICok4gSd_j3d00SYlW8ARfqc2q8/
 
 # Abstract
 
+# Contributors
+* Branden Lopez
+* Brendan Liu
+* Parsa Hashemi-Alavi
+* Sachen Sampath
+* Kai Hilbourne
+* Surendra Ghentiyala
+
+
 # Motivation
 “The United States is in the midst of a drug crisis with fatal consequences. Drug overdoses have become the leading cause of injury death and have more than tripled between 1999 and 2017. There were more than 70,000 confirmed drug overdose deaths in 2017, and of those, more than 47,000 involved an opioid.1”. There are many mediums through which drugs are acquired, and online pharmacies are one. In 2015 alone, the World Health organization estimates, “50% of the drugs for sale on the internet are fake… did not comply with NABP patient safety and pharmacy practice standards or US state and federal laws.2 ” These pharmacies take to social media, advertising to teens drugs that can potentially lead to death. With so much at risk there has been a question of how to stop the selling of illicit drugs on media platforms and one we aim to solve. Using methods from data science we aim to observe tweets that are selling drugs and build a model that will detect them, flagging them for removal. 
 # Discussion:
