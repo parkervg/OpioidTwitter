@@ -27,6 +27,15 @@ Data sets are often “unclean” or could be expanded upon. Our data set was th
 #### Text Pre-Processing
 With help from Parker, we were pointed in the direction of using a TFIDF matrix to create quantitative data from text.To do so we used methods from Brandon Rose. Using lemmatization to change words from third person to first. Stemming to take the roots of each word and changing past tense to present tense. In Tokenization we discard punctuation and break down our stings. Lastly we preprocess the data, getting rid of hashtags, words that are less than two letters and anything we did not want in each string. With all of this we could now use SKlearn’s “tfidfvectorizer” to show how important each word is to our documents and move into other methods such as clustering or topic modeling. 
 
+
+#### Data Labelling
+Having processed our text data into numerical matrices, we employed exploratory clustering to see if any natural divisons in the topics revealed a set of "illicit pharmacy" tweets. Throughout this clustering process, we kept track of all illegal tweet ids we saw and compiled a list of 62 total illegal tweets. One example reads as such:
+
+"`Buy GHB, Adderall, Alprazolam, Ritalin, Ketamine HCL, MDMA, Fentanyl online without prescription Contact us: Phon… https://t.co/6WhgXP71bp`"
+
+![Good Word Cloud](/Visualizations/good_tweets_wordcloud.png)
+![Bad Word Cloud](/Visualizations/bad_tweets_wordcloud.png)
+
 #### Clustering 
 K-means is a very popular way of exploring data. In our project we decided to use K Means Clustering to see some differences in our data. As you probably know, K-means looks for groups in data and tries to minimize the euclidean distance of each centroid. Unfortunately it is not easy to pick the amount of centroids we want, and the traditional elbow method would not work for our data. So we used two other methods, Brendan used the “Scoring” method and Branden used the “BIC” method…. Insert brief explanations and how we attained these methods and what they do. 
 
