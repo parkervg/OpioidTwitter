@@ -66,6 +66,8 @@ Autoencoders are a type of neural network often used for compression. The inputs
 
 ## Summary 
 #### Key Results 
+Key results will be coming soon.
+
 
 #### Problems Encountered
 One unexpected problem that appeared in our data was a rap album released prior to our data wrangling. One of the most popular songs on the album was titled “Codeine Crazy”, which meant that the keyword search Parker used caught thousands of tweets about the album. This specific issue represents a larger problem with our goal. Hard drugs have been a large part of hip hop culture for a long time, and this culture is becoming more and more ingrained with the mainstream. Casual tweets about hard drugs are relatively common, which means that illegal, online “pharmacies” are able to advertise on social media safely hidden among the thousands of regular posts. This may be one of the reasons why Twitter has not been successful in preventing illegal drug selling on their platform.
