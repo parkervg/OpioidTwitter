@@ -47,7 +47,14 @@ Below depicts word usage across the two types of tweets with the original set of
 ![Bad Word Cloud](/Visualizations/bad_tweets_wordcloud.png)
 
 #### Clustering 
-K-means is a very popular way of exploring data. In our project we decided to use K Means Clustering to see some differences in our data. As you probably know, K-means looks for groups in data and tries to minimize the euclidean distance of each centroid. Unfortunately it is not easy to pick the amount of centroids we want, and the traditional elbow method would not work for our data. So we used two other methods, Brendan used the “Scoring” method and Branden used the “BIC” method…. Insert brief explanations and how we attained these methods and what they do. 
+K-means is a very popular way of exploring data. In our project we decided to use K Means Clustering to see some differences in our data. As you probably know, K-means looks for groups in data and tries to minimize the euclidean distance of each centroid. Unfortunately it is not easy to pick the amount of centroids we want, and the traditional elbow method would not work for our data. So we used two other methods, Brendan used the “Scoring” method and Branden used the “BIC” method.
+
+#### Scoring
+Sklearn has a built-in .score() method to their k-means clustering function that was initially used to determine the optimum number of clusters. However, the score that sklean was using was purely the sum of distances between each data point and the cluster center. This can be a problem when choosing clusters as the variance in the words used is extremely high between texts and inter-cluster as well. This score fluctuates greatly as we vary the cluster number.
+
+#### BIC Method 
+Stemming for the AIC/BIC method from linear regression, complex clusters of data are modeled as a superimposition of a large number of Gaussian datasets. The BIC method penalizes a large number of Gaussians and tries to keep the model simple enough to explain the given data pattern.
+
 
 #### LDA
 One route for data exploration was use of Latent Dirichlet Allocation (LDA). When told how many topics to produce, the model attempts to provide that many topics across the entire corpus. While it does do the best job of directly finding relevant tweets (the documents of the corpus that the model is finding topics for), it allows us to find terms that are commonly occurring with other words/phrases we know come up often in illicit opioid sales tweets. This includes “bitcoin” and “without prescription.”
